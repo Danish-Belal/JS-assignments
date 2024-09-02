@@ -1,0 +1,1 @@
+This repo will contain all solutions of 100xdev JS assignments
