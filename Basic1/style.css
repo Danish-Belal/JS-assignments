@@ -1,0 +1,111 @@
+
+html , body{
+
+     font-family: "Inter" serif;
+     font-size: 16px;
+     font-weight: 400;
+}
+.container{
+     display: flex;
+     justify-content: space-between;
+     position: static;
+     /* border: solid black .5px; */
+     align-items: center;
+     height: 50px;
+     top: 0;
+
+}
+.container .navbar{
+     overflow: visible;
+     padding: 0;
+}
+.navbar-links{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+
+}
+
+.navbar-links li a {
+     color: #666;
+     font-size: 1rem;
+     transition: color .3s;
+     display: inline-block;
+     padding: 20px;
+     box-sizing: border-box;
+     font-family: serif;
+     text-decoration: none;
+     
+}
+.navbar-links li a:hover{
+     color: rgb(93, 93, 245);
+}
+.navbar-links li{
+     display: flex;
+     justify-content: center;
+}
+
+
+
+
+.logo-img{
+     max-height: 17px;
+     position: relative;
+     top: 18px;
+
+}
+
+
+
+img{
+     max-width: 100%;
+     border-style: none;
+}
+
+ul{
+     display: block;
+     list-style-type: none;
+}
+
+.nav1{
+     margin-left: 200px;
+     height: 200px;
+}
+.nav2{
+     margin-right: 200px;
+}
+
+.landing-img{
+     margin-bottom: 60px;
+     max-height: 45vh;
+     max-width: 60vw;
+}
+
+.main-comtainer{
+     margin-top: 20px;
+}
+.main-text-contain{
+     margin: 0;
+     padding: 0;
+}
+.heading-text{
+     font-size: 50px;
+     margin-bottom: 1rem;
+}
+.sub-heading-text{
+     font-size:25px;
+     margin-top: 0;
+}
+.signup-button{
+     width: 400px;
+     height: 400px;
+}
+.button{
+     background-color: #387ed1;
+     color: #fff;
+     border: 1px solid rgb(0, 0, 0,0);
+     border-radius: 3px;
+     targ
+}
