@@ -63,7 +63,7 @@ function calculateTotalSpentByCategory(transactions) {
 
      const results = []
      let map = new Map();
-     for(let i = 0 ; i<transactions.length-1;i++){
+     for(let i = 0 ; i<transactions.length;i++){
          
           if(map.has(transactions[i].category)){
                let totalExpanse = transactions[i].price+map.get(transactions[i].category);
@@ -75,7 +75,8 @@ function calculateTotalSpentByCategory(transactions) {
           
      }
      
-     // const iterator = map.keys();
+     console.log(map);
+     
      map.forEach(function (value,key){
           const obj = {
                "category" : key,
