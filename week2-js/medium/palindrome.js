@@ -4,7 +4,10 @@
 */
 
 function isPalindrome(str) {
-     let i = 0, j= str.length;
+     let i = 0, j= str.length;str 
+    str = str.toLowerCase();
+    console.log(str);
+    
      while(i<j){
           if(str[i] != str[j]) return false;
           i++,j--;
