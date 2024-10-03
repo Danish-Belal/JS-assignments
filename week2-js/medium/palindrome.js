@@ -15,6 +15,6 @@ function isPalindrome(str) {
      return true;
    }
    
-   console.log(isPalindrome('Nan'));
+   console.log(isPalindrome('Nan5533naN'));
    
 //    module.exports = isPalindrome;
