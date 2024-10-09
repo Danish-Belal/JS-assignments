@@ -33,19 +33,21 @@ class Todo {
 
      }
      remove(index){
-          const newTodo = todos.filter((ele)=> {
-               console.log(index);
-               
-               if(ele.id == index){
-                    
-               }
-          })
-          console.log("New TOdod",newTodo);
+          console.log(index);
+          let removed = todos.splice(index,1);
+          console.log("REMOVED ELE", removed);
           
-          
+     }
+     get(index){
+          return todos[index];
      }
      getAll(){
           return todos;
+     }
+     clear(){
+          while(todos.length >0) {
+               todos.pop()
+          }
      }
 
 }
@@ -79,9 +81,15 @@ newTodo.update(2,todo3);
 console.log("Final Todo", todos);
 
 
-newTodo.remove(2)
-console.log("AFter Remiving", todos);
+// newTodo.remove(1)
+// console.log("AFter Remiving", todos);
 
+const indexData = newTodo.get(1);
+console.log(indexData);
+
+
+newTodo.clear();
+console.log(todos);
 
 
 // module.exports = Todo;
