@@ -1,2 +1,1 @@
-Hello THis this a file which will contain some data. 
-so from here we need to export this data and expain how this will work
+Hii I am writing this from file.

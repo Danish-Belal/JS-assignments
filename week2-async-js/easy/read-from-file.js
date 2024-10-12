@@ -15,3 +15,14 @@ fs.readFile('./file.txt', 'utf-8',(err,data)=>{
      }
 })
 
+const expensiveOperation = () => {
+     let sum = 0;
+     for (let i = 0; i < 1e8; i++) { 
+       sum += i;
+     }
+     console.log('Expensive operation done');
+   };
+   
+   
+   expensiveOperation();
+
