@@ -4,11 +4,17 @@
 
  function wait(n) {
 
-     let promise =  new Promise((resolve)=>{
+     let promise =  new Promise((reject,resolve)=>{
           setTimeout(async ()=>{
                let data = await fetch('https://api.github.com/users/Danish-Belal');
                data = await data.json();
-               resolve(data);
+               if(data.status == 200){
+                    resolve(data);
+               }else{
+                    console.log('Rejected');
+                    reject(data)
+               }
+              
           },n)
      })
      return promise;
@@ -19,11 +25,9 @@
 
 let fun = wait(2000)
 fun.then((data) =>{
-
-     console.log(data);
+     console.log('Data retrived',data);
+}).catch((data)=>{
+     console.log('An Issue Occured', data);
+     
 })
-
-// fun.then(data) {
-//      console.log('Inside then', data);
-// }
 
