@@ -26,6 +26,9 @@ const getPokemonData = async () => {
           // Display specific Pokémon data
         const liTag = document.createElement('li');
         liTag.textContent = `ID: ${data.id}, Name: ${data.name}`;
+        const img = document.createElement('img');
+        img.src= data.url;
+        liTag.appendChild(img);
         ulElement.appendChild(liTag); // Append the Pokémon data to the list
 
      } else {
@@ -42,6 +45,10 @@ const getPokemonData = async () => {
             
             const liTage = document.createElement('li');
             liTage.textContent = `Name: ${poekmon.name}`;
+
+            const img = document.createElement('img');
+            img.src= poekmon.url;
+            liTage.appendChild(img);
             ulElement.appendChild(liTage)
             
          });{
