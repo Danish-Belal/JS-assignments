@@ -51,17 +51,25 @@
 }
 
 function getSelectedAnswer(){
-    const ans = document.getElementsByTagName
+    const radio = document.getElementsByTagName('input');
+    var value ;
+    for(let i=0; i<radio.length; i++){
+        if(radio[i].type === 'radio' && radio[i].checked){
+            value = radio[i].value;
+        }
+    }
+    console.log("Selected Value",value);
+    
+    return value;
+
 }
 
 function submitAnswer(score){
     console.log('ON Submite fun Triggered');
-    const quizBoxes = document.getElementsByClassName('quizBox');
-
-    Array.from(quizBoxes).forEach((box)=>{
-        box.innerHTML =""
-    })
-    score=10;
+    const quizBoxes = document.getElementsById('questions');
+    console.log(quizBoxes);
+    
+    quizBoxes.innerText = " "
     
     const finishTag = document.getElementById('finished');
     finishTag.innerText = `Your Totabl socre is ${score}`
@@ -80,6 +88,8 @@ let  i =-1;
         const seletedAns = getSelectedAnswer();
         if(seletedAns == quizData[i-1].correct){
             score +=10;
+            console.log("SCORE",score);
+            
         }
     }
 
