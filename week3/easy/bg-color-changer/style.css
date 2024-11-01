@@ -1,13 +1,21 @@
-#pannel{
+body{
+     height: 100%;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end; /* Aligns the panel to the bottom */
+ }
+ 
+ #pannel{
      display: flex;
      justify-content: space-around;
      background-color: rgb(237, 233, 228);
      height: 45px;
-     justify-items: center;
+     width: 70%; /* Define a specific width for the panel */
      align-items: center;
-     margin-top: 85vh;
-     margin-left: 15vw;
-     margin-right: 15vw;
+     margin-bottom: 2vh; /* Add a small margin from the bottom instead of using 85vh */
      border-bottom: 2px solid seagreen;
-     
-}
+ }
+ 
