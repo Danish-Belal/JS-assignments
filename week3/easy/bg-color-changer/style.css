@@ -7,15 +7,34 @@ body{
      justify-content: center;
      align-items: flex-end; /* Aligns the panel to the bottom */
  }
- 
+
+ .main{
+    height: 500px;
+    width: 70vw;
+    
+    /* background-color: black; */
+    /* justify-content: center; */
+
+ }
+
  #pannel{
      display: flex;
      justify-content: space-around;
      background-color: rgb(237, 233, 228);
      height: 45px;
-     width: 70%; /* Define a specific width for the panel */
+     width: 70vw; /* Define a specific width for the panel */
      align-items: center;
-     margin-bottom: 2vh; /* Add a small margin from the bottom instead of using 85vh */
+     margin-top: 80vh; /*Add a small margin from the bottom instead of using 85vh */
      border-bottom: 2px solid seagreen;
+ }
+
+ #colorButton{
+    margin-top: 8px;
+    height: 50px;
+    width: 300px;
+    border: 2px solid black;
+    margin-left: 25%;
+    margin-bottom: 7px;
+    cursor: pointer;
  }
  
